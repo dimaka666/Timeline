@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<script type="text/javascript" src="JS/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="JS/script.js"></script>  <!-- MY Script -->
+	<link rel="stylesheet" type="text/css" href="Style/main.css">
+</head>
+<body>
+<div class="wrapper">
+	<content>
+		<div class="controls">
+			<button class="init_btn" onclick="(($('input').val().length > 0) ? init($('input').val()) : alert('Enter length first'));">Init!</button>
+			<button class="action_home " onclick="(($('input').val().length > 0) ? add_action($('input').val(), 'HOME'  ) : alert('Enter time position first'));" disabled>Home!</button>
+			<button class="action_away" onclick="(($('input').val().length > 0) ? add_action($('input').val(), 'AWAY'  ) : alert('Enter time position first'));" disabled>Away!</button>	
+			<input type="number" name="entertime" placeholder="Length Of Period In Seconds">
+		</div>
+			<div class="timeline" data-time="">
+				<div class="markers">
+				</div>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+		</div>
+	</content>
+</div>
+</body>
+</html>
